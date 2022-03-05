@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  нет мета тегов описание и keywords	 -->
 </head>
 
 <body>
@@ -18,6 +19,7 @@
 			<div class="header__container container">
 				<div class="header__top">
 					<div class="header__logo">
+<!--		alt надо заполнять				-->
 						<a href="#"><img src="img/header/logo.svg" alt=""></a>
 					</div>
 					<div class="header__menu menu">
@@ -49,6 +51,7 @@
 					<div class="info__content">
 						<div class="info__img"><img src="img/main/image2.png" alt=""></div>
 						<div class="info__body">
+<!--		закрывающие теги надо переносить на новую строчку					-->
 							<h2 class="info__title title">We are a high-level
 								data
 								storage bank</h2>
@@ -66,6 +69,7 @@
 						<h2 class="features__title title">Features</h2>
 						<p class="features__text text">Some of the features and advantages that we provide for those of you
 							who store data in this Data Warehouse.</p>
+<!--		это список значит ul				-->
 						<div class="features__items">
 							<div class="features__item features-item">
 								<div class="features-item__img"><img src="img/main/search.png" alt=""></div>
@@ -153,6 +157,7 @@
 									<div class="swiper-pagination__bullet"></div>
 								</div>
 								<div class="swiper-buttons">
+<!--    в данной ситуации для кнопок надо предусмотреть span с текстом который скрыть visually-hidden, если стили не подгрузятся, то пользователю не будет понятен функционал    -->
 									<button type="button" class="swiper-button-prev"><img src="img/main/slide__arrow.svg"
 											alt=""></button>
 									<button type="button" class="swiper-button-next"><img src="img/main/slide__arrow.svg"
@@ -173,11 +178,16 @@
 							<span>DataWarehouse</span>
 						</a>
 						<div class="footer__contacts">
+							<!--    применение <br> плохая практика, перенос стилями при помощи max-width      -->
 							<a href="#" class="footer__place">Warehouse Society, 234<br>
 								Bahagia Ave Street
 								PRBW 29281
 							</a>
 							<div class="footer__user">
+<!--	почта и телефон надо через ссылку с href
+	<a href="mailto:mail@mail.ru">Напишите нам</a>
+	<a href="tel:+79001111111">+7-900-111-11-11</a>
+-->
 								<a href="#" class="footer__mail">info@warehouse.project</a>
 								<a href="#" class="footer__phone">1-232-3434 (Main)</a>
 							</div>
@@ -188,6 +198,7 @@
 					<div class="footer__social social-footer">
 						<h3 class="social-footer__label">Social Media</h3>
 						<div class="social-footer__icons">
+<!--			почему нет иконок для соц сетей?				-->
 							<a href="#" class="social-footer__icon"></a>
 							<a href="#" class="social-footer__icon"></a>
 							<a href="#" class="social-footer__icon"></a>
